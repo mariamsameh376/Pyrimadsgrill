@@ -5,19 +5,16 @@ import { Link } from "react-router-dom";
 
 const initialTestimonials = [
   { name: "Dalton Harper", text: "The restaurant is very clean and friendly. Really liked the shawarma plate — my new go-to spot! Freshly made food and great vibes. ❤️" },
-  { name: "Sarah Ali", text: "OOTA is a hidden gem! The service was fantastic, and the food tasted like home. Highly recommend the beef shawarma plate!" },
-  { name: "John Williams", text: "Incredible atmosphere and authentic Egyptian taste. The falafel and tahini sauce were on another level!" },
-  { name: "Mona Ibrahim", text: "Best Egyptian restaurant in town! Everything tasted fresh, and the staff made us feel like family." },
-  { name: "David Miller", text: "Loved the koshari and lentil soup! Everything tasted authentic and freshly made." },
-  { name: "Layla Hassan", text: "So glad we found OOTA! Amazing service, warm atmosphere, and top-notch food." },
-  { name: "Mark Johnson", text: "Absolutely delicious! The chicken shawarma wrap is my favorite — so flavorful!" },
-  { name: "Fatma Khaled", text: "A taste of Egypt right here! Everything from the bread to the desserts was perfect." },
-  { name: "James Carter", text: "Friendly staff and cozy vibes. You can tell they put love into their food." },
-  { name: "Nora Ahmed", text: "Had an amazing dinner with my family. The portions were generous and the flavor outstanding!" },
-  { name: "Ali Mustafa", text: "Tried their falafel sandwich — crispy, flavorful, and just perfect. Highly recommend!" },
-  { name: "Emily Brown", text: "I’ve been to many Mediterranean restaurants, but OOTA stands out by far!" },
-  { name: "Hassan Omar", text: "Authentic taste and beautiful presentation. The molokhia was just like back home!" },
-  { name: "Sophia Green", text: "OOTA never disappoints — clean, cozy, and consistently delicious!" },
+  { name: "Slœpe Su", text: "Really good food and very nice people highly recommend, 10/10 👍🏼" },
+  { name: "Murray Jacket", text: "My husband and I tried it with our 3 year old for the first time today - we will DEFINITELY be going back! It was clean, staff was friendly and prompt, and the food was DELICIOUS! Well seasoned lamb, perfect pita, and the sauces  - yum! Plus the portions were very large." },
+  { name: "Jay White", text: "Finally, a great gyro shop in Lebanon!" },
+  { name: "Lane Crockarell", text: "Everything I ordered was great! I absolutely love Mediterranean food and they didn't disappoint. Every person there was nice and helpful. I'll DEFINITELY be going back! This might be our weekly take-out order." },
+  { name: "Bijan Dabiri", text: "need more places like this in Lebanon, love the gyros and taboule" },
+  { name: "Jennifer Goolsby Dies", text: "We ordered a double cheeseburger, fries, and a mix grill plate. It was absolutely AMAZING! This is my new go to place. They are friendly, great prices, and the food is so fresh! I would give 10 stars if I could." },
+  { name: "Brittany Watkins-Barrera", text: "Food was amazing and service is so friendly! Can't eay enough great things!" },
+  { name: "Bethany Shay Edgewortrth", text: "Absolutely amazing! I had the lamb gyro plate, and it was delicious! 😊" },
+  { name: "Michelle Hayes Cannon", text: "We needed something new and different in Lebanon and WOW!! This place is amazing. We’ve had the chicken plate, lamb gyro, and chicken gyro!! Everything has been delicious!🤤 They have a big fan in me and my household (and bonus points that it’s right down the road from me) 🩷" },
+
 ];
 
 const Testimonials = () => {
