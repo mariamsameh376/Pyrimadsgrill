@@ -110,7 +110,7 @@ const MenuSection = () => {
                   </span>
                 </div>
                 <p className="text-gray-600 text-sm mt-3">
-                  Served fresh with our special spices.
+                 
                 </p>
               </div>
             </div>

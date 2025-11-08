@@ -68,7 +68,7 @@ const Testimonials = () => {
           Our Guests Speak for Us
         </h1>
         <p className="text-lg text-gray-600">
-          Hear what people say about their OOTA experience.
+          Hear what people say about their Pyrimads Grill experience.
         </p>
       </motion.div>
 
