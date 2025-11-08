@@ -77,7 +77,7 @@ const OrderPage = () => {
       {/* 🔸 Feedback Teaser */}
       <div className="mt-20 text-center">
         <p className="text-gray-300 text-lg mb-3">
-          See what others think of <span className="text-[#39FF14] font-semibold">Pyrimads Gill</span> 👉
+          See what others think of <span className="text-[#39FF14] font-semibold">Pyramids Grill</span> 👉
         </p>
         <Link
           to="/testimonials"

@@ -68,7 +68,7 @@ const Testimonials = () => {
           Our Guests Speak for Us
         </h1>
         <p className="text-lg text-gray-600">
-          Hear what people say about their Pyrimads Grill experience.
+          Hear what people say about their Pyramids Grill experience.
         </p>
       </motion.div>
 
