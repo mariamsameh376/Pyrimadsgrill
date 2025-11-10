@@ -47,7 +47,7 @@ const menuSections = [
     title: "Wings",
     icon: <Drumstick className="inline-block w-6 h-6 mr-2 text-[#39FF14]
 " />,
-    subtitle: "Sauce: Buffalo, BBQ, Hel, Winger, Blue Cheese, Lemon Pepper, and Xira Hot",
+    subtitle: "Sauce: Buffalo, BBQ, Hot Lemon Pepper, and extra Hot",
     items: [
       { name: "6 wings", price: "8.99" },
       { name: "8 wings", price: "10.99" },

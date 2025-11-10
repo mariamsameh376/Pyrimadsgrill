@@ -15,7 +15,7 @@ const Footer = () => {
             Pyramids <span className="text-red-600">Grill</span>
           </h2>
           <p className="text-sm leading-6">
-            Experience the taste of authentic Egyptian cuisine, 
+            Experience the taste of authentic Mediterranean cuisine, 
             made with love and the finest ingredients.
           </p>
         </div>
