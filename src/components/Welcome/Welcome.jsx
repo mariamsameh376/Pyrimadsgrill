@@ -44,9 +44,7 @@ const Welcome = () => {
             
           </h2>
           <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-            Dive into the heart of Egypt’s culinary tradition. From sizzling
-            shawarmas to creamy koshary, every bite tells a story crafted with
-            passion and family heritage.
+          🔥 Dive into the heart of Mediterranean grill tradition. From sizzling shawarmas and tender chicken plates to smoky lamb chops and juicy wings, every bite tells a story of flavor, family, and fire — crafted with passion and heritage.
           </p>
 
           <Link
