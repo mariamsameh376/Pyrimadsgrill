@@ -74,7 +74,7 @@ const MenuSection = () => {
             Our Signature Dishes
           </h2>
           <p className="text-lg text-gray-300 font-poppins">
-            Authentic Egyptian flavors with a modern twist
+          
           </p>
         </div>
 
