@@ -7,6 +7,8 @@ import Menu from './pages/Menu/Menu';
 import Contact from './pages/Contact/Contact';
 import About from "./pages/About/About";
 import OrderPage from "./pages/OrderPage";
+import PickupMenu from "./pages/PickupMenu";
+
 
 const App = () => {
 
@@ -21,6 +23,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/about" element={<About />} />
         <Route path="/order" element={<OrderPage />} />
+        <Route path="/pickup" element={<PickupMenu />} />
 
   
     

@@ -92,7 +92,7 @@ const ContactUs = () => {
             <Phone className="w-8 h-8 text-[#39FF14]" />
             <div>
               <h3 className="text-xl font-bold text-[#39FF14]">Call Us</h3>
-              <p className="text-gray-300">+1 (615) 720-2500</p>
+              <p className="text-gray-300">+1 (615) 470-8047</p>
             </div>
           </div>
 
@@ -100,7 +100,7 @@ const ContactUs = () => {
             <Mail className="w-8 h-8 text-[#39FF14]" />
             <div>
               <h3 className="text-xl font-bold text-[#39FF14]">Email Us</h3>
-              <p className="text-gray-300">info@pyramidsgrill.com</p>
+              <p className="text-gray-300">pyramidsgrillmc@gmail.com</p>
             </div>
           </div>
 

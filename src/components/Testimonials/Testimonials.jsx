@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Quote, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const initialTestimonials = [
   { name: "Dalton Harper", text: "The restaurant is very clean and friendly. Really liked the shawarma plate — my new go-to spot! Freshly made food and great vibes. ❤️" },
@@ -14,17 +14,27 @@ const initialTestimonials = [
   { name: "Brittany Watkins-Barrera", text: "Food was amazing and service is so friendly! Can't eay enough great things!" },
   { name: "Bethany Shay Edgewortrth", text: "Absolutely amazing! I had the lamb gyro plate, and it was delicious! 😊" },
   { name: "Michelle Hayes Cannon", text: "We needed something new and different in Lebanon and WOW!! This place is amazing. We’ve had the chicken plate, lamb gyro, and chicken gyro!! Everything has been delicious!🤤 They have a big fan in me and my household (and bonus points that it’s right down the road from me) 🩷" },
-
 ];
 
 const Testimonials = () => {
+  const location = useLocation();
   const [testimonials, setTestimonials] = useState(initialTestimonials);
   const [index, setIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [newName, setNewName] = useState("");
   const [newText, setNewText] = useState("");
 
-  // تحريك السلايدر تلقائيًا كل 5 ثواني
+  // ✅ Scroll تلقائي لما نيجي من صفحة تانية
+  useEffect(() => {
+    if (location.hash === "#testimonials") {
+      const section = document.getElementById("testimonials");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+  // تحريك السلايدر تلقائيًا
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
@@ -34,7 +44,6 @@ const Testimonials = () => {
 
   const current = testimonials[index];
 
-  // توليد الأحرف الأولى من الاسم
   const initials = current.name
     .split(" ")
     .map((n) => n[0])
@@ -51,13 +60,15 @@ const Testimonials = () => {
       setNewName("");
       setNewText("");
       setShowModal(false);
-      setIndex(testimonials.length); // انتقل مباشرة للرأي الجديد
+      setIndex(testimonials.length);
     }
   };
 
   return (
-    <div className="font-sans bg-[#fff8f5] min-h-screen flex flex-col justify-center items-center px-6 py-12 relative">
-      {/* العنوان */}
+    <div
+      id="testimonials"
+      className="font-sans bg-[#fff8f5] min-h-screen flex flex-col justify-center items-center px-6 py-12 relative"
+    >
       <motion.div
         className="text-center mb-12"
         initial={{ opacity: 0, y: -30 }}
@@ -72,7 +83,6 @@ const Testimonials = () => {
         </p>
       </motion.div>
 
-      {/* السلايدر */}
       <div className="relative w-full md:w-[700px] h-[420px] flex justify-center items-center overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
@@ -87,9 +97,7 @@ const Testimonials = () => {
 
             <div
               className="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4 shadow-md text-2xl font-bold text-white"
-              style={{
-                backgroundColor: colors[index % colors.length],
-              }}
+              style={{ backgroundColor: colors[index % colors.length] }}
             >
               {initials}
             </div>
@@ -97,12 +105,13 @@ const Testimonials = () => {
             <p className="text-gray-700 italic mb-6 text-lg leading-relaxed">
               “{current.text}”
             </p>
-            <h3 className="text-xl font-semibold text-[#D42A1B]">{current.name}</h3>
+            <h3 className="text-xl font-semibold text-[#D42A1B]">
+              {current.name}
+            </h3>
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* نقاط التبديل */}
       <div className="flex gap-3 mt-8">
         {testimonials.map((_, i) => (
           <button
@@ -115,17 +124,6 @@ const Testimonials = () => {
         ))}
       </div>
 
-      {/* زر إضافة رأي جديد */}
-      <button
-        onClick={() => setShowModal(true)}
-        className="mt-8 bg-[#D42A1B] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#b42214] transition"
-      >
-        Add Your Review
-      </button>
-
-
-
-      {/* المودال */}
       <AnimatePresence>
         {showModal && (
           <motion.div

@@ -6,7 +6,8 @@ import MenuSection from'../../components/MenuSection/MenuSection'
 import Welcome from '../../components/Welcome/Welcome'
 import Footer from '../../components/Footer/Footer'
 import Testimonials from '../../components/Testimonials/Testimonials'
-
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 const Home = () => {
   
   return (

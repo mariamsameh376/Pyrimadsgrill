@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import logo from "../assets/logo.png"; // ✅ استدعاء صورة اللوجو
 
+
 const OrderPage = () => {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 pt-20 pb-12">
@@ -41,21 +42,18 @@ const OrderPage = () => {
 
       {/* الزرين */}
       <div className="flex flex-col md:flex-row gap-8">
-        {/* زر Pickup */}
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.97 }}
-          className="bg-[#39FF14] text-black rounded-2xl px-10 py-6 font-bold text-2xl shadow-lg hover:shadow-[#39FF14]/60 transition-all"
-        >
-          <a
-            href="https://www.doordash.com/store/33171781?utm_source=mx_share"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3"
-          >
-            🚗 <span>Pick Up</span>
-          </a>
-        </motion.div>
+      <Link to="/pickup">
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.97 }}
+    className="bg-[#39FF14] text-black rounded-2xl px-10 py-6 font-bold text-2xl shadow-lg hover:shadow-[#39FF14]/60 transition-all cursor-pointer"
+  >
+    <div className="flex items-center gap-3">
+      🚗 <span>Pick Up</span>
+    </div>
+  </motion.div>
+</Link>
+
 
         {/* زر Delivery */}
         <motion.div
@@ -80,7 +78,7 @@ const OrderPage = () => {
           See what others think of <span className="text-[#39FF14] font-semibold">Pyramids Grill</span> 👉
         </p>
         <Link
-          to="/testimonials"
+          to="/#testimonials"
           className="bg-[#39FF14] text-black px-6 py-2 rounded-full font-semibold hover:bg-white transition-all shadow-md"
         >
           View Testimonials
