@@ -42,17 +42,7 @@ const OrderPage = () => {
 
       {/* الزرين */}
       <div className="flex flex-col md:flex-row gap-8">
-      <Link to="/pickup">
-  <motion.div
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.97 }}
-    className="bg-[#39FF14] text-black rounded-2xl px-10 py-6 font-bold text-2xl shadow-lg hover:shadow-[#39FF14]/60 transition-all cursor-pointer"
-  >
-    <div className="flex items-center gap-3">
-      🚗 <span>Pick Up</span>
-    </div>
-  </motion.div>
-</Link>
+
 
 
         {/* زر Delivery */}
